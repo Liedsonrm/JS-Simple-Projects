@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificando</title>
+</head>
+<style>
+    body{
+        background-color: blueviolet;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction:column;
+        align-items: center;   
+    }
+    #codigo{
+        width: 85vw;
+        height: 35vh;
+        font-size: 1.5rem;
+        background-color: antiquewhite;
+    }
+    p{
+        font-size:2.5rem;
+
+    }
+    span{
+        font-size: 1.5rem;
+    }
+</style>
+<body>
+    <header>
+        <h1>
+            ROT13
+        </h1>
+    </header>
+    <main>
+        <textarea name="codigo" id="codigo" cols="30" rows="10"></textarea>
+        <p onclick="tirarP()">V</p>
+        <label>
+            <span id="descodificado"></span>
+        </label>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
